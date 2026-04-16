@@ -30,14 +30,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>页面标题</title>
-    <!-- 引入 Element Plus 样式 -->
-    <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
+    <!-- 引入 Element Plus 样式 (版本锁定以确保稳定性) -->
+    <link rel="stylesheet" href="https://unpkg.com/element-plus@2.9.1/dist/index.css">
     <!-- 引入 Vue 3 -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
     <!-- 引入 Element Plus -->
-    <script src="https://unpkg.com/element-plus"></script>
+    <script src="https://unpkg.com/element-plus@2.9.1"></script>
     <!-- 引入 Element Plus 图标 -->
-    <script src="https://unpkg.com/@element-plus/icons-vue"></script>
+    <script src="https://unpkg.com/@element-plus/icons-vue@2.3.1"></script>
     <style>
         /* 自定义样式 */
     </style>
@@ -150,6 +150,8 @@
 2. 所有依赖通过CDN引入，无需本地安装
 3. 代码结构清晰，添加必要的注释
 4. 确保响应式布局在不同屏幕尺寸下正常显示
+
+> **注意**: CDN方式适合快速原型开发和演示，但需要网络连接。如需离线使用或生产环境部署，建议使用npm安装依赖并通过构建工具打包。
 
 ### 7. 使用示例
 
